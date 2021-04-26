@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+
+
+<body>
+<!--H5 表单&input-->
+<h3>Submit将参数提交到index</h3>
+<form action="http://localhost:8080/demo/login" method="post">
+    Account:<input id="useraccount" type="text" name="account"><br>
+    Password:<input type="password" name="password"><br>
+    <input type="submit" value="Submit">
+</form>
+
+<iframe width="80%" height="500px" align="center" src="second.html">
+
+</iframe>
+<br>
+<button style="height: 30px;width: auto" onclick="buttonclick()">Login</button>
+<br>
+<button style="height: 30px;width: auto" onclick="window.location.href='sqldemo.html'">To MySQL</button>
+
+<script>
+    function buttonclick() {
+        alert("login user name :"+document.getElementById("useraccount").value);
+    }
+</script>
+
+
+</body>
+</html>
